@@ -4,13 +4,20 @@ import com.googlecode.objectify.annotation.Entity;
 
 @Entity
 public class LoginDetails {
-private String emailId;
+private String userId;
 private String pass;
-public String getEmailId() {
-	return emailId;
+public LoginDetails(String userId, String pass) {
+	this.userId=userId;
+	this.pass=pass;
 }
-public void setEmailId(String emailId) {
-	this.emailId = emailId;
+public LoginDetails() {
+	
+}
+public String getuserId() {
+	return userId;
+}
+public void setuserId(String emailId) {
+	this.userId = emailId;
 }
 public String getPass() {
 	return pass;
